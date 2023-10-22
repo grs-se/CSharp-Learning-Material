@@ -5,7 +5,9 @@
 The concept of encapsulation is all about: How do you group the data methods and fields together into a single unit of the class?
 
 **What?**:
+
 Encapsulation is a concept of:
+
 - Bundling the data (fields) and operations (methods) that manipulate the data together. 
 - Hides internal implementation details of ant object and privide the essential members to interacting with them.
 
