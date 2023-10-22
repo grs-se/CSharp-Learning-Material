@@ -59,3 +59,26 @@ public readonly string CategoryName = "Electronics"
 - overall, when you want store some common data that belongs to all objects of the class use the static field. when you have common data that belongs to all objects and at same time it is fixed value you dont want to change it later, then use constant. On other hand, if oyu have some data that is isolated to every object, that means the value of that particular field is immutable for every object, but at the same time you don't want to allow the value to be changed, in that case, go for readonly field. 
 - readonly fields cannot be delcared as 'local' inside a method, they can only be delcared inside the class. 
 
+---
+## Local Constants
+
+---
+## Recap
+**Fields**
+Variables that are declared in the class; stored in the objects.
+
+Isolated for each object.
+Access Modifiers of Fields
+Access Modifier (a.k.a. "Access Specifier" or "Visibility Modifier) specifies the accessibility of fields, where the fields can be accessible; they provide security for the fields.
+
+**Key Points to Remember**
+
+Fields are variables that are declared in the class; but stored in objects.
+
+Access modifiers of fields: private, protected, private protected, internal, protected internal, public
+
+Modifiers of fields: static, const, readonly
+
+Instance fields are individual for each object; Static fields are common (one-time) for all objects.
+
+Constants must be initialized along with declaration; Readonly fields must be initialized either 'along with declaration' or in 'instance constructor'.
