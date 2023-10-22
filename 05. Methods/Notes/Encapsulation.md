@@ -28,7 +28,7 @@ Encapsulation is a concept of:
 Data modularity - encapsulation encourages developers to write a class that contains two types of members mainly: fields and methods. 
 
 1). 
-Fields are the data. Person name, email, phone number.
+- Fields are the data. Person name, email, phone number.
 And also there can be some manipulations that can be performed on these data, for example storing or setting a value intot he field, returning those details later, while printing the values to the user, supplying the details to another class, and also performing the validations, i.e. checking that the values are correct or not before storing them into the field. 
 - Also there may be some calculation logic. 
 - So to perform operations on the fields you are required to create methods. 
