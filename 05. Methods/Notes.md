@@ -55,4 +55,10 @@ Access Modifiers (a.k.a "Access Specifier" or "Visibility Modifier") of methods,
 
 ---
 
+#### Class Library
+- Class library compiled as DLL file, and we are required to add reference to that DLL file into the console applicaiton, so that all the classes that are accessible unde the class lbrary project are accesible under the console application.
+- In realtime projects good practice to add reusable classes into class library, and reference them / access them in console project. 
+---
+Fro instance methods there must be a current object, otherwise it can't be called.
+- doens't return any value so cannot print anything to console with Console.WriteLine()
 
