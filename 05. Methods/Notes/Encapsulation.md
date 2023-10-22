@@ -1,8 +1,23 @@
-How do you group the data methods and fields together into a single unit of the class?
+# Encapsulation
 
+**Encapsulation is one of the important Object Oriented Programming features**.
+
+The concept of encapsulation is all about: How do you group the data methods and fields together into a single unit of the class?
+
+**What?**
 Encapsulation is a concept of:
 - Bundling the data (fields) and operations (methods) that manipulate the data together. 
 - Hides internal implementation details of ant object and privide the essential members to interacting with them.
+
+**Benefits**
+- Modularity
+- Hiding Implementation details
+- Data Integrity
+
+**Implemented using**:
+- Private fields &
+- Public properties or public methods
+
 
 2 aspects to this: 
 - 1 = group the data memebers
@@ -107,3 +122,9 @@ So here we have implemented encapsulation in such a way that we have declared a 
 
 While printing the value of the field, instead of accessing the field directly it is better to call the Get method, so the get method returns the value of the field, and that value can be printed by using Console.Writeline method.
 - This is the better and recommended wya of programming in Object Oriented Programming, because the methods must be used to manipulate the fields. 
+
+---
+
+Suppose a class has a set of fields and methods but from outside the class all the fields and methods should not be accessible, only it should provide a set of fields and methods that are essential to outside the class. That means some fields and methods are hidden in the same class itself without allowing them to be visible outside the class. For example a person has a lot of thoughts in his mind, but he may not reveal all of his thoughts to outside world, he reveals only some of his thoughts to others so that the remaining thoughts are hidden. 
+
+The code that exists outside the class can access only the public fields and methods, but cannot access the private fields and methods. But these private methods can be called as part of the public methods indirectly, and even these private fields can be accesseible inside the public methods or in the private methods also. And when you create an object it will allocate the memory for private fields also.   
