@@ -21,13 +21,13 @@ Encapsulation is a concept of:
 - Public properties or public methods
 
 
-2 aspects to this: 
+**2 aspects to this**: 
 - 1 = group the data memebers
 - 2 = hiding implementation details, i.e. the code from outside the class should be able to access the fields indirectly only through methods but not the fields directly. 
 
 Data modularity - encapsulation encourages developers to write a class that contains two types of members mainly: fields and methods. 
 
-1. 
+1). 
 Fields are the data. Person name, email, phone number.
 And also there can be some manipulations that can be performed on these data, for example storing or setting a value intot he field, returning those details later, while printing the values to the user, supplying the details to another class, and also performing the validations, i.e. checking that the values are correct or not before storing them into the field. 
 - Also there may be some calculation logic. 
@@ -35,7 +35,7 @@ And also there can be some manipulations that can be performed on these data, fo
 - So you have the data in the form of fields, and you have operations in the form of methods. 
 - A class encapsulates, that means groups together as a single unit. So this is the first part of the encapsulation. 
 
-2. 
+2). 
 - The other aspect of encapsulation is to hide the implementation details. That means you will have to create the private fields with public methods so it encourages the "data integrity", that means the code that is outside the class will be able to access the fields only through methods, but not directly. 
 
 ```csharp
@@ -45,10 +45,10 @@ Class {
 }
 ```
 
-#### Set and Get Methods. 
+### Set and Get Methods. 
 
-Set method is used to assign a value into the field.
-Get method is used to retrieve the value from the field. 
+- Set method is used to assign a value into the field.
+- Get method is used to retrieve the value from the field. 
 
 
 Instead of assignign the value directly into the field, it is better to pass that value to the method, and inside the method we assing the value into the field. In that way methods allow you to access the fields indirectly. This is the better way of programming in real0time projects because isnide the method we can write some code for validattions or caluclations which are necessary every time you access a particular field. 
@@ -96,8 +96,9 @@ public class Product
 
 So here we have implemented encapsulation in such a way that we have declared a set of fields and a corresponding manipulative methods in the same unit that is called Product Class. So whenever you create a set of fields and a set of methods that manipulate those fields as a single unit that concept is called "encapsulation". 
 
-- So here instead of settign the value directly intot he field, we are going to call the SetPRoductId() method and pass in the vlaue as an argument. 
-- So how does this method get executed? When you call the method the execution sequence jumps tot he particular method. So for this method a seperate stack will be created. In that stack the parameter variable gets stored. And also the parameter will issue the vlaue that you pass while calling the method. So the value of 1001 will be issued into the parameter int'value', and the same value that is 1001 will be assigned into the field which is productId. So overall by calling this method you are inititlising 1001 intot he productId. That is why we can say that the Set method is used to assing a value into the field. For Realtime programming using the methods is a better way necause inside the method we can add some logic for calulcaiton or checking some conditions, to validate the value before assigning it to field. 
+So here instead of settign the value directly intot he field, we are going to call the SetPRoductId() method and pass in the vlaue as an argument. 
+
+So how does this method get executed? When you call the method the execution sequence jumps tot he particular method. So for this method a seperate stack will be created. In that stack the parameter variable gets stored. And also the parameter will issue the vlaue that you pass while calling the method. So the value of 1001 will be issued into the parameter int'value', and the same value that is 1001 will be assigned into the field which is productId. So overall by calling this method you are inititlising 1001 intot he productId. That is why we can say that the Set method is used to assing a value into the field. For Realtime programming using the methods is a better way necause inside the method we can add some logic for calulcaiton or checking some conditions, to validate the value before assigning it to field. 
 
 
 ```csharp
@@ -123,7 +124,8 @@ So here we have implemented encapsulation in such a way that we have declared a 
 ```
 
 While printing the value of the field, instead of accessing the field directly it is better to call the Get method, so the get method returns the value of the field, and that value can be printed by using Console.Writeline method.
-- This is the better and recommended wya of programming in Object Oriented Programming, because the methods must be used to manipulate the fields. 
+
+This is the better and recommended wya of programming in Object Oriented Programming, because the methods must be used to manipulate the fields. 
 
 ---
 
