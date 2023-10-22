@@ -41,4 +41,18 @@ accessModifier modifier returnType MethodName(parameter1, parameter2, ...)
 ---
 ### Access Modifiers of Methods
 
+Access Modifiers (a.k.a "Access Specifier" or "Visibility Modifier") of methods, are same as access modifiers of fields. 
+
+
+| Access Modifier    | In the same class | In the child classes at the same assembly | In the other classes at the same assembly | Child classes at other assembly | Other classes at other assembly |
+|--------------------|-------------------|-------------------------------------------|-------------------------------------------|---------------------------------|---------------------------------|
+| private            | Y                 | N                                         | N                                         | N                               | N                               |
+| protected          | Y                 | Y                                         | N                                         | Y                               | N                               |
+| private protected  | Y                 | Y                                         | N                                         | N                               | N                               |
+| internal           | Y                 | Y                                         | Y                                         | N                               | N                               |
+| protected internal | Y                 | Y                                         | Y                                         | Y                               | N                               |
+| public             | Y                 | Y                                         | Y                                         | Y                               | Y                               |
+
+---
+
 
