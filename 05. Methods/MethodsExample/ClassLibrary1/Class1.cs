@@ -17,6 +17,12 @@
         dateOfPurchase = System.DateTime.Now.ToShortDateString();
     }
 
+    //Set method for productId
+    public void SetProductId(int value)
+    {
+        productID = value;
+    }
+
     //method
     /*const <= 20000 then tax = 10%
     const > 20000 then tax = 12.5%*/
