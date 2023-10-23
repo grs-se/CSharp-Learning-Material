@@ -72,6 +72,17 @@
         return dateOfPurchase;
     }
 
+    //static method: Set method TotalNoOfProducts
+    public static void SetTotalNoOfProducts(int value)
+    {
+        TotalNoProducts = value;
+    }
+
+    //static method: Get method TotalNoOfProducts
+    public static int GetTotalNoOfProducts()
+    {
+        return TotalNoProducts;
+    }
 
     //Set method for tax
     public void SetTax(double value)

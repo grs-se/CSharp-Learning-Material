@@ -7,11 +7,14 @@
 
         //create objects
         product1 = new Product();
-        Product.TotalNoProducts++; //1
+        Product.SetTotalNoOfProducts(Product.GetTotalNoOfProducts() + 1);//1
+        //Product.TotalNoProducts++;//1
         product2 = new Product();
-        Product.TotalNoProducts++; //2
+        Product.SetTotalNoOfProducts(Product.GetTotalNoOfProducts() + 2);//2
+        //Product.TotalNoProducts++;//2
         product3 = new Product();
-        Product.TotalNoProducts++; //3
+        Product.SetTotalNoOfProducts(Product.GetTotalNoOfProducts() + 3);//3
+        //Product.TotalNoProducts++;//3
 
         // convert all statements that assign values to the fields as methods
         //initalize fields
@@ -68,7 +71,7 @@
 
         //display totals
         System.Console.WriteLine("Total Quantity: " + totalQuantity);
-        System.Console.WriteLine("Total no. of products: " + Product.TotalNoProducts);  //Output: 3
+        System.Console.WriteLine("Total no. of products: " + Product.GetTotalNoOfProducts());  //Output: 3
         System.Console.WriteLine("Category of products: " + Product.CategoryName);  //Output: Electronics
 
         //TO DO: Findout the highest cost of all three products.
