@@ -20,7 +20,7 @@
     //Set method for productID
     public void SetProductId(int value)
     {
-        productID = value;
+        this.productID = value;
     }
 
     //Get method for productID
