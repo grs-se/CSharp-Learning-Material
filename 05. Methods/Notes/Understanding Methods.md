@@ -1,3 +1,5 @@
+# Understanding Methods
+
 - Method is a function (group of statements), to do some process based on fields. 
 - Methods are parts ot eh calss. 
 - Methods can receive one or more input values as "paramateres" and treutnr a alue as "return". 
