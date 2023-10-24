@@ -105,9 +105,27 @@
         double t;
 
         //calculate tax
-        if (cost <= 20000)
+        if (this.cost <= 20000)
         {
             t = cost * 10 / 100;
+        }
+        else
+        {
+            t = cost * percentage / 100;
+        }
+        tax = t;
+    }
+
+    //cost is supplied as argument value
+    public void CalculateTax(double cost, double percentage)
+    {
+        //create local variable
+        double t;
+
+        //calculate tax
+        if (cost <= 50000)
+        {
+            t = cost * 5 / 100;
         }
         else
         {
