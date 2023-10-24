@@ -99,8 +99,11 @@
     //Calculate tax method
     /*const <= 20000 then tax = 10%
     const > 20000 then tax = 12.5%*/
-    public void CalculateTax(double percentage = 4.5)
+    public void CalculateTax(double percentage)
     {
+        //the changes to this variable will not be effected to the original argument variable 'p'
+        percentage = 10.45;
+
         //create local variable
         double t;
 

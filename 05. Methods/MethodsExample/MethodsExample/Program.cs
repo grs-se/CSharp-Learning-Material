@@ -37,7 +37,12 @@
 
         //call methods
         product1.CalculateTax(percentage: 9.2);
+        //temporary local variable.
+        //We pass the value of the argument variable 'p' into the the parameter called 'percentage'
+        //but any changes made to 'percentage' parameter will not be effected to the original argument variable
+        double p = 7.4;
         product2.CalculateTax(7.4);
+        System.Console.WriteLine("p is " + p);
         product3.CalculateTax(10000, 3.4);
 
         //get values from fields
